@@ -4,6 +4,8 @@
     display: flex;
     justify-content: flex-end;
 
+    filter: drop-shadow(5px 3px 7px black);
+
     .navbar-shape {
         width: 0;
         height: 0;
@@ -12,8 +14,23 @@
     }
 
     .navbar {
+        color: $primary;
         min-height: 35px;
         background-color: $secondary;
         width: 35%;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .item {
+            transition: color 0.3s, transform 0.3s;
+
+            &:hover {
+                color: black;
+                transform: scale(1.02)
+            }
+        }
     }
 }

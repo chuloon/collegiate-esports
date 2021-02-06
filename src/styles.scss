@@ -4,5 +4,22 @@
 body {
     margin: 0px;
     background-color: $primary;
+    font-family: 'regular', sans-serif;
+    font-size: 20px;
 }
 
+.headline {
+    font-family: 'headline', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: 'headline';
+    src: url('../src/assets/fonts/big_noodle_titling.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../src/assets/fonts/ModernSans-Light.otf') format('opentype')
+}
