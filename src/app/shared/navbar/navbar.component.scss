@@ -1,0 +1,19 @@
+@import '../../../assets/styles/colors.scss';
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+
+    .navbar-shape {
+        width: 0;
+        height: 0;
+        border-top: 35px solid $secondary;
+        border-left: 45px solid transparent;
+    }
+
+    .navbar {
+        min-height: 35px;
+        background-color: $secondary;
+        width: 35%;
+    }
+}
