@@ -25,11 +25,13 @@
         justify-content: space-around;
 
         .item {
-            transition: color 0.3s, transform 0.3s;
+            transition: color 0.3s, font-size 0.3s;
+            flex-grow: 1;
+            text-align: center;
 
             &:hover {
                 color: black;
-                transform: scale(1.02)
+                font-size: 26px
             }
         }
     }
