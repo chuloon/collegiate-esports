@@ -1,0 +1,105 @@
+@import '../../../assets/styles/colors.scss';
+
+.newsfeed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        width: 100%;
+        color: $secondary;
+        font-size: 40px;
+        filter: drop-shadow(3px 2px 4px black);
+
+        .separators {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .separator {
+                display: flex;
+
+                &.first {
+                    height: 6px;
+                    width: 100%;
+
+                    .line {
+                        background-color: $secondary;
+                        flex-grow: 1;
+                    }
+
+                    .left-decoration {
+                        width: 0;
+                        height: 0;
+                        border-top: 6px solid $secondary;
+                        border-left: 8px solid transparent;
+                    }
+
+                    .right-decoration {
+                        width: 0;
+                        height: 0;
+                        border-top: 6px solid $secondary;
+                        border-right: 8px solid transparent;
+                    }
+                }
+
+                &.second {
+                    margin-top: 6px;
+                    height: 4px;
+                    width: 97%;
+                    opacity: 50%;
+
+                    .line {
+                        background-color: $secondary;
+                        flex-grow: 1;
+                    }
+
+                    .left-decoration {
+                        width: 0;
+                        height: 0;
+                        border-top: 4px solid $secondary;
+                        border-left: 5px solid transparent;
+                    }
+
+                    .right-decoration {
+                        width: 0;
+                        height: 0;
+                        border-top: 4px solid $secondary;
+                        border-right: 5px solid transparent;
+                    }
+                }
+
+                &.third {
+                    margin-top: 5px;
+                    height: 3px;
+                    width: 94.5%;
+                    opacity: 25%;
+
+                    .line {
+                        background-color: $secondary;
+                        flex-grow: 1;
+                    }
+
+                    .left-decoration {
+                        width: 0;
+                        height: 0;
+                        border-top: 3px solid $secondary;
+                        border-left: 4px solid transparent;
+                    }
+
+                    .right-decoration {
+                        width: 0;
+                        height: 0;
+                        border-top: 3px solid $secondary;
+                        border-right: 4px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        margin-top: 1vh;
+        max-width: 94%;
+    }
+}
