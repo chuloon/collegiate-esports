@@ -11,6 +11,23 @@
         font-size: 40px;
         filter: drop-shadow(3px 2px 4px black);
 
+        &.sub {
+            font-size: 35px;
+            line-height: 40px;
+            opacity: .75;
+
+            .separators {
+                margin-top: 5px;
+
+                .separator {
+                    &.second {
+                        width: 94%;
+                    }
+                }
+                
+            }
+        }
+
         .separators {
             display: flex;
             flex-direction: column;
@@ -101,5 +118,50 @@
     .content {
         margin-top: 1vh;
         max-width: 94%;
+
+        .post {
+            display: flex;
+
+            .thumbnail {
+                img {
+                    max-width: 100%;
+                    border: 1px solid $white;
+                }
+            }
+
+            .content {
+                padding-left: 15px;
+                margin-top: 0px;
+
+                .body {
+                    p {
+                        margin-top: .25em;
+                    }
+                }
+            }
+        }
+
+        .header {
+            font-size: 35px;
+        }
+
+        .post-image {
+            max-height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border: 1px solid $white;
+        }
+
+        .tagline {
+            display: inline;
+            font-size: 14px;
+            font-style: italic;
+            opacity: 75%;
+        }
+
+        .body {
+            font-size: 18px;
+        }
     }
 }

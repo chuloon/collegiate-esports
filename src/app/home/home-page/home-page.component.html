@@ -1,4 +1,8 @@
 <div class="home-container">
     <app-carousel class="carousel"></app-carousel>
-    <app-newsfeed class="newsfeed"></app-newsfeed>
+    <div class="newsfeeds">
+        <app-newsfeed [title]="'gaming'"></app-newsfeed>
+        <app-newsfeed [title]="'latest'" [isMain]="true" [showSummary]="true" class="latest"></app-newsfeed>
+        <app-newsfeed [title]="'esports'"></app-newsfeed>
+    </div>
 </div>
