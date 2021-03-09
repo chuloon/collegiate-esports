@@ -4,11 +4,6 @@
         <div class="border-decoration top"></div>
     </div>
     <div class="content">
-        <!-- <div class="item">
-            <div>
-                <img src="https://csgopedia.com/uploads/blog/image069.jpg">
-            </div>
-        </div> -->
         <carousel 
             [height]="250" 
             [cellWidth]="'100%'" 
@@ -18,7 +13,9 @@
             [dots]="true" 
             [images]="images" 
             [lightDOM]="true"
-            [overflowCellsLimit]="2"
+            [overflowCellsLimit]="1"
+            [autoplayInterval]="15000"
+            [transitionDuration]="400"
             (events)="handleCarouselEvents($event)">
         </carousel>
     </div>
