@@ -25,13 +25,17 @@
         justify-content: space-around;
 
         .item {
-            transition: color 0.3s, font-size 0.3s;
             flex-grow: 1;
             text-align: center;
 
-            &:hover {
-                color: black;
-                font-size: 26px
+            a {
+                color: $primary;
+                text-decoration: none;
+
+                &:hover {
+                    transition: color 0.3s;
+                    color: black;
+                }
             }
         }
     }

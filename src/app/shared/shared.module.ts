@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { IvyCarouselModule } from './ivy-carousel-pro/carousel.module';
 import { TruncateText } from './pipes/truncate-text.pipe';
 import { NgModule } from '@angular/core';
@@ -15,6 +16,7 @@ import { IconModule, IconSetModule } from '@coreui/icons-angular';
     IvyCarouselModule,
     IconModule,
     IconSetModule.forRoot(),
+    RouterModule
   ],
   exports: [
     NavbarComponent,
