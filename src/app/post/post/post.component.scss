@@ -1,0 +1,52 @@
+@import '../../../assets/styles/colors.scss';
+
+.post-container {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 65%;
+    margin: 0 auto;
+    margin-top: 15vh;
+
+    .post {
+        flex-grow: 3;
+        padding-right: 20px;
+
+        .banner img {
+            width: 100%;
+            max-height: 200px;
+            overflow: hidden;
+            object-fit: cover;
+            border: 1px solid $secondary;
+        }
+
+        .title {
+            color: $secondary;
+            font-size: 45px;
+            margin-bottom: 15px;
+
+            .tagline {
+                color: white;
+                opacity: .5;
+                font-size: 18px;
+                display: inline;
+            }
+
+            .author {
+                color: white;
+                opacity: .5;
+                font-size: 18px;
+                font-style: italic;
+                margin-top: -5px;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .latest-newsfeed {
+        margin-top: 60px;
+    }
+}

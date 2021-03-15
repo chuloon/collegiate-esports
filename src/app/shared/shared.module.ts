@@ -4,19 +4,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
-
+import { NewsfeedComponent } from './newsfeed/newsfeed.component';
+import { IconModule, IconSetModule } from '@coreui/icons-angular';
 
 
 @NgModule({
-  declarations: [NavbarComponent, CarouselComponent, TruncateText],
+  declarations: [NavbarComponent, CarouselComponent, TruncateText, NewsfeedComponent],
   imports: [
     CommonModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    IconModule,
+    IconSetModule.forRoot(),
   ],
   exports: [
     NavbarComponent,
     CarouselComponent,
     TruncateText,
+    NewsfeedComponent
   ]
 })
 export class SharedModule { }
