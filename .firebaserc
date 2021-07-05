@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "collegiate-esports": {
+      "hosting": {
+        "collegiate-esports": [
+          "collegiate-esports"
+        ]
+      }
+    }
+  }
+}

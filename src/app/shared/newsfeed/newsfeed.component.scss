@@ -143,6 +143,18 @@
 
         .header {
             font-size: 35px;
+
+            &.headline {
+                a {
+                    color: inherit;
+                    text-decoration: inherit;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
         }
 
         .post-image {

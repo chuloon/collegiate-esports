@@ -1,8 +1,8 @@
 <div class="home-container">
     <app-carousel class="carousel"></app-carousel>
     <div class="newsfeeds">
-        <app-newsfeed [title]="'gaming'"></app-newsfeed>
-        <app-newsfeed [title]="'latest'" [isMain]="true" [showSummary]="true" class="latest"></app-newsfeed>
-        <app-newsfeed [title]="'esports'"></app-newsfeed>
+        <app-newsfeed [title]="'gaming'" [filter]="'gaming'"></app-newsfeed>
+        <app-newsfeed [title]="'latest'" [filter]="'latest'" [isMain]="true" [showSummary]="true" class="latest"></app-newsfeed>
+        <app-newsfeed [title]="'esports'" [filter]="'esports'"></app-newsfeed>
     </div>
 </div>

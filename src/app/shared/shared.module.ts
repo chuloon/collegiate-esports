@@ -7,10 +7,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NewsfeedComponent } from './newsfeed/newsfeed.component';
 import { IconModule, IconSetModule } from '@coreui/icons-angular';
+import { FooterComponent } from './footer/footer.component';
+import { SeparatorComponent } from './separator/separator.component';
 
 
 @NgModule({
-  declarations: [NavbarComponent, CarouselComponent, TruncateText, NewsfeedComponent],
+  declarations: [NavbarComponent, CarouselComponent, TruncateText, NewsfeedComponent, FooterComponent, SeparatorComponent],
   imports: [
     CommonModule,
     IvyCarouselModule,
@@ -22,7 +24,9 @@ import { IconModule, IconSetModule } from '@coreui/icons-angular';
     NavbarComponent,
     CarouselComponent,
     TruncateText,
-    NewsfeedComponent
+    NewsfeedComponent,
+    FooterComponent,
+    SeparatorComponent
   ]
 })
 export class SharedModule { }

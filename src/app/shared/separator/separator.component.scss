@@ -1,0 +1,6 @@
+@import '../../../assets/styles/colors.scss';
+
+.separator {
+    border-bottom: 2px solid darken($primary, 15%);
+    filter: drop-shadow(2px 2px 2px black);
+}

@@ -21,19 +21,19 @@
     </div>
 
     <div class="content">
-        <div class="post">
+        <div class="post" *ngFor="let post of posts">
             <div class="thumbnail">
-                <img src="https://content.fortune.com/wp-content/uploads/2015/05/rmuesports1.jpg" />
+                <img [src]="post.headerImageUrl" />
             </div>
             <div class="content">
                 <div class="header headline">
-                    RMU Takes Championship
+                    <a [routerLink]="'post/' + post.slug">{{ post.title }}</a>
                     <div class="tagline">
-                        <c-icon name="cil-clock" size="sm"></c-icon> 3/3/2021
+                        <c-icon name="cil-clock" size="sm"></c-icon> {{ post.datePosted }}
                     </div>
                 </div>
                 <div *ngIf="showSummary" class="body">
-                    <p>{{ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ex tellus, placerat vitae condimentum a, efficitur feugiat nisi. Nulla cursus turpis velit, vitae mattis neque convallis non. Integer hendrerit turpis in urna feugiat, vel volutpat arcu porta. Aliquam accumsan leo scelerisque turpis accumsan blandit. Vivamus aliquet nisi ac posuere cursus. Quisque vehicula lectus sit amet malesuada dignissim. Mauris ac lorem eu mauris gravida congue. Fusce in laoreet ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ipsum odio, finibus sed lacus in, porttitor tempor leo. Pellentesque nec purus tincidunt, consequat tortor in, fringilla nisi. Vivamus ac auctor arcu. Ut non sapien nec mauris sollicitudin fermentum. In lacus lectus, ultrices non odio eget, egestas ultrices odio.' | truncate:[300]}}</p>
+                    <p>{{ post.bodyText | truncate:[300]}}</p>
                 </div>
             </div>
         </div>
